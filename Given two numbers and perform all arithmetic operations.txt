@@ -1,0 +1,45 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+var a=userInput[0].split(" ");
+
+var v1=a[0];
+var v2=a[1];
+
+
+console.log('Value of a='+ v1 + '  '+ 'value of b='+v2+'' );
+
+
+var add=v1+v2;
+
+
+console.log('SUM  ='+add+'' );
+
+var sub=v1-v2;
+
+console.log('DIFFERENCE ='+sub+ '' );
+
+var mul=v1*v2;
+
+console.log('PRODUCT  ='+mul+  '');
+
+var div=v1/v2;
+
+console.log('QUOTIENT  ='+div+ '');
+    
+  
+
+
+
+
+
+
+
+});

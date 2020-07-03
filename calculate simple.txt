@@ -1,0 +1,28 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+var a=userInput[0].split(" ");
+
+var P=a[0];
+
+var N=a[1]
+
+var R=a[2]
+
+
+var result=P * N * R/100
+
+
+
+
+console.log('Simple Interest'+ result);
+
+
+});
