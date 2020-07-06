@@ -1,0 +1,31 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+console.log('Input--->'+ ' '+userInput[0]);
+console.log('        --------Output-------')
+var equ = userInput[0].split(" ");
+console.log('userInput[0].split(" ")==>'+ ' '+ equ);
+console.log('        ----printing value in Array--------')
+
+console.log('equ.toString()==>'+ ' '+ equ.toString());
+console.log('equ.join(" ")==>'+ ' '+ equ.join(" "));
+console.log('        ----Adding new elemnet to Array----')
+equ.push("p");
+console.log('equ.push("p");'+ ' '+ equ);
+console.log(' equ.valueOf())'+ ' '+ equ.valueOf());
+console.log('        ----Length----')
+console.log(' equ.length'+ ' '+ equ.length);
+console.log('        ----split----')
+console.log('userInput[0].split(5)==>'+ ' '+  userInput[0].split("5"));
+console.log('userInput[0].split(,)==>'+ ' '+  userInput[0].split(","));
+console.log('userInput[0].split(,)==>'+ ' '+  userInput[0].split(""));
+
+console.log('userInput[0].split(,)==>'+ ' '+  equ.reverse());
+
+});
