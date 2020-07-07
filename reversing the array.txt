@@ -1,0 +1,40 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+var string=userInput[0];
+  var freq=[];
+  
+
+var d=userInput[0].split(" ");
+var e=userInput[0];
+
+var arra=[];
+console.log(d);
+
+
+
+var r=0;
+for(var t=d.length-1;t>=0;t--)
+{
+    //console.log(userInput[2]);
+    //console.log(d[t]);
+    arra.push(d[t]);
+    
+}
+
+console.log(arra);
+
+
+
+
+  
+  
+})
+
+

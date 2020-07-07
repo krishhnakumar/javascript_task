@@ -1,0 +1,67 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+var string=userInput[0];
+  var freq=[];
+  
+var a=userInput[0];
+var b=userInput[1].split(" ");
+var c=userInput[1];
+var d=userInput[2].split(" ");
+var e=userInput[2];
+
+var arra=[];
+console.log(arra);
+for(var i=0;i<d.length;i++)
+{
+    //console.log(userInput[2]);
+    //console.log(d[i]);
+    arra+=d[i];
+}
+
+console.log(arra);
+console.log(arra.length);
+
+var dup=arra;
+console.log(dup);
+
+var p=0;
+for(var j=d.length;j>0;j--)
+{
+    //console.log(userInput[2]);
+    //console.log(d[j]);
+    arra[p]=d[j];
+    p++;
+}
+
+var m=arra.split(" ");
+console.log(m);
+
+
+
+
+var r=0;
+for(var t=d.length;t>0;t--)
+{
+    //console.log(userInput[2]);
+    //console.log(d[j]);
+    arra.push(d[t]);
+    
+}
+
+console.log(arra);
+
+
+
+
+  
+  
+})
+
+

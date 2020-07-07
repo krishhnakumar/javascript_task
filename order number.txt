@@ -1,0 +1,55 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+var string=userInput[0];
+  var freq=[];
+  
+  var a=userInput[0];
+  var b=userInput[1].split(" ");
+  console.log(b.toString());
+  console.log(b.length())
+  var  even=0;
+  
+  var odd=0
+  //for(var i=0;i<=b.length;i+2)
+  for(var j=0;j<b.length;j++)
+  {
+      
+      if(j%2===0)
+      {
+      
+     even +=parseInt(b[j]);
+      
+      
+      }
+      else{
+          //console.log(j)
+       odd +=parseInt(b[j]);
+      }
+      
+  }
+  console.log(even);
+  console.log(odd);
+  
+  console.log(b.length);
+  console.log(b.length-1);
+  
+  if(even>odd)
+  {
+      for(var i=b.length-1;i<b.length;i--)
+      {
+         console.log(b[i]); 
+      }
+      
+      
+  }
+  
+})
+
+

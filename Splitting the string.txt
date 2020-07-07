@@ -1,0 +1,11 @@
+ // Sample string
+var str = "Hello World!";
+ 
+// Splitting the string
+var chars = str.split(" ");
+
+var chars2 = str.split("");
+
+console.log(str);
+console.log(chars);
+console.log(chars2);

@@ -1,0 +1,68 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+var string=userInput[0];
+  var freq=[];
+  
+
+var d=userInput[0].split(" ");
+var e=userInput[0];
+
+var arra=[];
+console.log(d);
+var r=0;
+for(var t=d.length-1;t>=0;t--)
+{
+    arra.push(d[t]);
+    
+}
+console.log(arra);
+var dup=null;
+var count=0;
+var arr_dup=[];
+for(var i=0;i<d.length;i++)
+{
+    
+    if(d[i]!=dup)
+    {
+        dup=d[i];
+        
+        count=1;
+        
+    }
+    
+    else
+    {
+        count++;
+    }
+    
+   arr_dup.push(d[i]+'' +count);
+    
+}
+ console.log(arr_dup);
+ 
+ console.log(arr_dup.toString());
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+})
+
+

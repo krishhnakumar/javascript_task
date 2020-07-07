@@ -1,0 +1,42 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+  inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+var string=userInput[0];
+  var freq=[];
+  
+var a=userInput[0];
+var b=userInput[1].split(" ");
+var c=userInput[1];
+var d=userInput[2].split(" ");
+var e=userInput[2];
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+console.log(d.toString());
+console.log(e.toString());
+ 
+})
+
+Input:
+7
+1234567
+1 2 3 4 5 6 7
+
+Output:
+7
+[ '1234567' ]
+1234567
+[ '1', '2', '3', '4', '5', '6', '7' ]
+1 2 3 4 5 6 7
+1,2,3,4,5,6,7
+1 2 3 4 5 6 7
+
+
